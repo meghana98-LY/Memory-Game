@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+﻿# Memory Game
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A two-player memory matching game built with React. Players flip cards to find matching image pairs, earn points, and compete for the highest score.
+
+## Overview
+
+This project is a browser-based card matching game built using Create React App. The board shuffles at the start of each game, and two players take turns trying to match pairs of cards.
+
+## Features
+
+- Two-player turn-based gameplay
+- Score tracking for Player 1 and Player 2
+- Randomized card order on each game
+- Simple, responsive card board layout
+- Built with React and standard web technologies
+
+## Project Structure
+
+- `src/App.js` — main game logic and UI
+- `src/Card.js` — card component
+- `src/styles.css` — game styling
+- `public/index.html` — HTML entry point
+- `public/images/` — game card images
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18.x or newer
+- npm 9.x or newer
+
+### Install dependencies
+
+From the project root directory:
+
+```bash
+npm install
+```
+
+### Start the development server
+
+```bash
+npm start
+```
+
+Open `http://localhost:3000` in your browser to play the game.
+
+The app will reload automatically when you make changes.
 
 ## Available Scripts
 
-In the project directory, you can run:
-
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Starts the development server in development mode.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Builds the app for production and outputs optimized files to the `build/` folder.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### `npm test`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Runs the test runner in interactive watch mode.
 
 ### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Ejects the project from Create React App configuration. This is irreversible and only recommended if you need full control over the build setup.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Gameplay
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Click a card to flip it over.
+2. Click a second card to try to match the pair.
+3. If the cards match, the current player scores a point.
+4. If the cards do not match, the turn switches to the other player.
+5. Click `New Game` to restart the board and reset scores.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Technologies
 
-## Learn More
+- React 19
+- Create React App
+- JavaScript
+- CSS
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Notes
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is intended as a simple React game demo. You can extend it by adding sound effects, animations, difficulty levels, or a single-player mode.
